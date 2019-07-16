@@ -1,0 +1,207 @@
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1.5em;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  text-align: center;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top:2em;
+}
+.headbar{
+  background-color: #61dafb;
+  border-radius: 25px 25px 0px 0px;
+  background-color: rgb(115, 117, 117);
+  padding: 5px 20px 5px 20px;
+  color: aliceblue;
+}
+.detail{
+  padding:1em;
+  border: 1px solid grey;
+  background-color: rgb(158, 152, 152);
+}
+.detail .weather-icon img{
+  width: 100px;
+}
+.detail .weather-location{
+  float: none;
+}
+.detail .weather-location .city{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom:0.5em 
+}
+.detail .weather-location .country{
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom:0.5em 
+}
+.detail .weather-temp{
+  text-align: center;
+  padding-top:1em;
+}
+.detail .weather-temp .celcious{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.25em; 
+}
+.detail .weather-temp .status{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  background-image: url('./searchicon.png');
+  background-size: 7%;
+  background-position: 5px 12px;
+  padding: 12px 20px 12px 40px; 
+  background-repeat: no-repeat;
+  outline: none;
+  font-size: 1.5em;
+  margin: 1em 0em;
+  text-align: left
+}
+input[type=text]:focus {
+  background-color: lightblue;
+}
+::-webkit-input-placeholder{
+  opacity: 0.4;
+}
+
+input[type=submit] {
+  width: 100%;
+  font-size: 1.3em;
+  padding:15px 15px; 
+  background:rgb(239, 241, 239); 
+  border:0 none;
+  cursor:pointer;
+  outline: none;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+input[type=submit]:hover{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.error-msg{
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgb(107, 106, 106);
+  line-height: 1.5em
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  form input[type=text] {
+    background-size: 5%;
+  }
+}
+@media only screen and (min-width: 768px){
+  /* For desktop: */
+  [class*="col-"] {
+    text-align: left
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .bodySection{
+    background-image: linear-gradient(-30deg, rgb(146, 143, 143), rgb(233, 233, 225));
+  }
+  .container{
+    width: 70%;
+  }
+  .headbar h2{
+    text-align: left;
+  }
+  .detail{
+    background-image: linear-gradient(-30deg, rgb(146, 143, 143), rgb(233, 233, 225));
+    border-bottom: 0px;
+  }
+  .clear{
+    clear: both;
+  }
+  .detail .weather-icon{
+    float: left;
+  }
+
+  .detail .weather-location{
+    float: left;
+  }
+  .detail .weather-location .city{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom:0.5em 
+  }
+  .detail .weather-location .country{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom:0.5em 
+  }
+  .detail .weather-temp{
+    float: right;
+    text-align: right;
+    padding-top: 0em;
+  }
+  .detail .weather-temp .celcious{
+    padding-right: 1em; 
+  }
+  .detail .weather-temp .status{
+    padding-right: 2em; 
+  }
+  form{
+    box-sizing: border-box;
+    border: 1px solid grey;
+  }
+  .control{
+    padding: 2em;
+  }
+  input[type=text] {
+    background-size: 5%;
+  }
+  input[type=submit] {
+    margin: 1em 0;
+  }
+  .textbox-container{
+    float: left;
+  }
+  .submit-container{
+    float: right;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .container{
+    width: 50%;
+  }
+}
